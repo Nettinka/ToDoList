@@ -1,2 +1,2 @@
 # ToDoList
- Простой список дел с CRUD, подлкючена MySQL
+ Простой список дел на Spring с CRUD, подлкючена MySQL
