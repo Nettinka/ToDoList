@@ -1,0 +1,82 @@
+h1 {
+    font-size: 30px;
+    color: rgba(255, 0, 0, 0.521);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.header{
+    height: 40px;
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 10px 20px;
+    display: table;
+}
+
+#title{
+	maxlength: 30;
+	border: 1px solid black;
+    border-radius: 10px;
+	margin-top:5px;
+	width: 300px;
+}
+#text{
+	margin-top:5px;
+	maxlength: 200;
+	border: 1px solid black;
+    border-radius: 10px;
+	height: 40px;
+	width: 400px;
+	margin-bottom: 5px;
+}
+
+.form_container{
+	margin-top: 20px;
+	position: relative;
+	display: flex;
+	display:inline-block;
+	justify-content: space-between;
+	width: 400px;
+}
+.sendbutton{
+	border-radius: 4px;
+}
+.red_sendbutton {
+    border-radius: 4px;
+}
+
+.caseslist{
+	width: 400px;
+	margin-top:20px;
+	
+}
+.case_info{
+	text-align:center;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+p{
+	margin-bottom: 5px;
+	margin-top:5px;
+}
+
+.case_title{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.delete_btn {
+	float: right;
+	background-color: burlywood;
+	border-radius: 4px;
+}
+
+.red_form {
+    text-align:center;
+    border: 2px solid black;
+    border-radius: 10px;
+	position: absolute;
+	z-index:1000;
+}

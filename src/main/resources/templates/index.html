@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <title>ToDoList</title>
+</head>
+<body>
+<div class="header">
+    <h1>Список дел (<span th:text="${casesCount}"></span>)</h1>
+</div>
+<div class="form_container">
+    <form name="case_form">
+        <input type='text' name='title' placeholder="Название">
+        <br>
+        <input type='text' name='description' placeholder="Описание задачи">
+        <br>
+        <button class="sendbutton" id="createcase"><img
+                src="https://image.winudf.com/v2/image/Y29tLnNuYXBzaG90Lm5vdGVwYWRfaWNvbl8wXzRkOWZiMzNi/icon.png?w=340&fakeurl=1"
+                width="15px" style="vertical-align: middle">
+            Добавить дело</button>
+    </form>
+
+</div>
+
+<!---    Кнопка получения всех задач
+<div>
+    <button class="sendbutton buttonAllCases" id="get_all_cases">Получить список всех задач</button>
+</div>
+-->
+<div class="forform"></div>
+<div class="container">
+    <div class="caseslist" th:each="case : ${cases}">
+        <div class="case_info" th:attr="data-id=${case.id}">
+            <button class="delete_btn" th:id="'delete_' + ${case.id}">Delete</button>
+            <p class="case_title" th:text="${case.title}"></p>
+            <p class="case_description" th:text="${case.description}"></p>
+            <button class="red_sendbutton">Редактировать задачу</button>
+        </div>
+    </div>
+</div>
+    <script src='/js/index.js'></script>
+</body>
+</html>
